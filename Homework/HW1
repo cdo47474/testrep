@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# X = np.linspace(0, 10, 100)
+X = np.arange(1.920, 2.080, 0.001)
+
+Y = np.pow(X,9) - 18 * (np.pow(X, 8)) + 144 * (np.pow(X, 7)) - 672*(np.pow(X, 6)) + 2016*(np.pow(X, 5)) - 4032*(np.pow(X, 4)) + 5376*(np.pow(X, 3)) - 4608*(np.pow(X, 2)) + 2304*(np.pow(X, 1)) - 512
+Y1 = np.pow((X-2), 9)
+plt.plot(X, Y,)
+plt.plot(X, Y1,)
+
+plt.show()
