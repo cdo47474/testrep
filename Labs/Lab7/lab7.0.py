@@ -94,9 +94,10 @@ def driver():
     
     err =  norm(yex-yeval) 
     print('err = ', err)
-    # plt.plot(xeval, yex)
-    # plt.plot(xeval, yeval)
-    # plt.show()
+    plt.figure()
+    plt.plot(xeval, yex)
+    plt.plot(xeval, yeval)
+    
     
     '''LAGRANGE'''
 
