@@ -6,17 +6,15 @@ from numpy.linalg import inv
 from numpy.linalg import norm
 from scipy import special
 import matplotlib.pyplot as plt
+# %matplotlib inline
 
-Nmax = 10
-x=0
-for its in range(Nmax):
-    
-    x1 = x + 1
+x,y = np.meshgrid(np.linspace(0,0.3,10),np.linspace(0,0.3,10))
 
-    if(x>3):
-        break
-    x=x1
-    print(x)
+u = x
+v = -y
+
+plt.quiver(x,y,u,v)
+plt.show()
     
 
     
