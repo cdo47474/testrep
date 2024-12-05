@@ -8,16 +8,14 @@ from scipy import special
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
-x,y = np.meshgrid(np.linspace(0,0.3,10),np.linspace(0,0.3,10))
-
-u = x
-v = -y
-
-plt.quiver(x,y,u,v)
+x = np.linspace(-1,3,100)
+plt.figure(figsize=(10,5))
+for i in range(-2,4):
+    m = 2**i
+    I = -(m**2)/4
+    
+    f = lambda x: m*x + I
+    plt.plot(x, f(x))
+# f1 = lambda x: (np.e)**x - 1
+# plt.plot(x,f1(x))
 plt.show()
-    
-
-    
-    
-
-
